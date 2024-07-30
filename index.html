@@ -19,39 +19,53 @@
     <!-- Header -->
     <header>
         <!-- Logo / Home Button -->
-        <a
-            title="Home"
-            tabindex="0"
-            href="./index.html"
+        <a 
+            title="Home" 
+            tabindex="0" 
+            href="./index.html" 
             aria-label="Link to Home"
         >
             <img 
-                alt="TipToes Soles Logo"
-                src="./resources/branding/logo.png"
+                alt="TipToes Soles Logo" 
+                src="./resources/branding/logo.png" 
             />
         </a>
-        <!-- Navigation Menu -->
+        <!-- Hamburger Menu Toggle -->
+        <input 
+            type="checkbox"
+            id="menu-toggle"
+        >
+        <label 
+            for="menu-toggle" 
+            id="menu-icon"
+        >   
+            <!-- Hamburger Menu Icon -->
+            <img 
+                src="./resources/icons/menu.png" 
+                class="mobile-icon"
+            >
+        </label>
         <nav>
             <ul>
                 <!-- About -->
                 <li>
-                    <a 
+                    <a
                         href="./about.html"
                         aria-label="About"
                         tabindex="1"
                         title="About"
-                    >   
+                    >
                         About
                     </a>
                 </li>
                 <!-- Products -->
                 <li>
-                    <a 
+                    <a
                         href="./products.html"
                         aria-label="Products"
                         tabindex="2"
                         title="Products"
-                    >   
+                    >
                         Products
                     </a>
                 </li>
@@ -62,72 +76,74 @@
                         aria-label="Services"
                         tabindex="3"
                         title="Services"
-                    >   
+                    >
                         Services
                     </a>
                 </li>
                 <!-- Contact -->
                 <li>
                     <a 
-                        href="./contact.html"
-                        aria-label="Contact"
-                        tabindex="4"
+                        href="./contact.html" 
+                        aria-label="Contact" 
+                        tabindex="4" 
                         title="Contact"
-                    >   
+                    >
                         Contact
                     </a>
                 </li>
             </ul>
         </nav>
         <!-- Container for Search / Login / Wishlist & Cart elements -->
-        <div>
-            <!-- Search Bar -->
-            <input
-                tabindex="5"
-                type="search"
-                title="Search"
-                aria-label="Search"
-                value="Search"
-            />
+        <div id="header-right">
             <!-- Nested Icons Flex Container -->
             <div>
+                <!-- Search Icon -->
+                <img 
+                    tabindex="5"  
+                    title="Search" 
+                    aria-label="Search"
+                    class="icons"
+                    alt="Search Icon"
+                    src="./resources/icons/search.png"
+                />
                 <!-- Login Icon -->
-                <a
+                <a 
                     tabindex="6"
-                    title="Login"
-                    aria-label="Login"
+                    title="Login" 
+                    aria-label="Login" 
                     href="./login.html"
                 >
-                    <img
-                        class="icons"
-                        alt="User Login Icon"
-                        src="./resources/icons/login.png"
+                    <img 
+                        class="icons" 
+                        alt="User Login Icon" 
+                        src="./resources/icons/login.png" 
                     />
                 </a>
                 <!-- Wishlist Icon -->
-                <a
-                    tabindex="7"
-                    title="Wishlist"
-                    aria-label="Wishlist"
+                <a 
+                    id="wishlist"
+                    tabindex="7" 
+                    title="Wishlist" 
+                    aria-label="Wishlist" 
                     href="./wishlist.html"
                 >
-                    <img
-                        class="icons"
-                        alt="Wishlist Icon"
-                        src="./resources/icons/wishlist.png"
+                    <img 
+                        class="icons" 
+                        alt="Wishlist Icon" 
+                        src="./resources/icons/wishlist.png" 
                     />
                 </a>
                 <!-- Shopping Cart / Bag Icon -->
-                <a
-                    tabindex="8"
-                    title="View Cart"
-                    aria-label="Cart"
+                <a 
+                    tabindex="8" 
+                    title="View Cart" 
+                    aria-label="Cart" 
                     href="./cart.html"
                 >
-                    <img
-                        class="icons"
-                        alt="Shopping Bag Icon"
-                        src="./resources/icons/cart.png"
+                    <img 
+                        class="icons" 
+                        alt="Shopping Bag Icon" 
+                        src="./resources/icons/cart.png" 
                     />
                 </a>
             </div>
@@ -286,7 +302,9 @@
                 </a>
             </li>
         </ul>
-        <div>
+        <div
+            id="github-icon"
+        >
             <!-- Github Link / Icon -->
             <a  
                 tabindex="14"

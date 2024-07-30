@@ -14,7 +14,7 @@ header {
     background-color: #050505;
     display: flex;
     align-items: center;
-    justify-content :space-between;
+    justify-content: space-between;
 }
 
 header > a > img {
@@ -46,7 +46,7 @@ header > nav > ul > li > a {
     color: #DFE0E2;
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
-    padding: 7px 60px 7px 60px;
+    padding: 7px 60px;
 }
 
 header > nav > ul li:hover {
@@ -67,15 +67,6 @@ header > div {
     gap: 1em;
 }
 
-header > div > input {
-    border-radius: 16px;
-    border: 2px solid #232323;
-    background-color: #DFE0E2;
-    font-family: 'DM Sans', sans-serif;
-    color: #848990;
-    padding: 5px 10px 5px 10px;
-}
-
 header > div > div {
     display: flex;
     justify-content: space-around;
@@ -88,7 +79,7 @@ header > div > div {
     border-radius: 8px;
 }
 
-.icons-active { 
+.icons-active {
     background-color: #40454D;
     border-radius: 8px;
     height: 30px;
@@ -102,6 +93,22 @@ header > div > div > a:focus {
     background-color: #40454D;
     border-radius: 8px;
     height: 30px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-icon {
+    display: none;
+}
+
+#header-right {
+    margin-top: -50px;
+}
+
+#header-right > div {
+    gap: 0.5em;
 }
 
 h1, h2, p, .card, #list {
@@ -261,7 +268,7 @@ footer > ul > li > a:focus {
 
 /* PRODUCTS */
 #products-container {
-    padding: 50px 0 110px 0;
+    padding: 0 0 30px 0;
     overflow-y: scroll;
     display: grid;
     margin: 0 auto;
@@ -381,3 +388,206 @@ footer > ul > li > a:focus {
   
   
   
+/* Base styles written for standard 13.6" laptop */
+
+/* Extra Large devices (large desktops/monitors, 1665px and up) */
+@media (min-width: 1665px) {
+    h1 {
+        margin-top: 160px;
+        font-size: 84px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    #products-container {
+        gap: 40vh;
+        padding: 0 0 200px 0;
+    }
+
+    .slide:nth-child(1) {
+        margin-left: 2400px;
+    }
+    
+    
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+    
+        100% {
+            transform: translateX(-220%);
+        }
+    }
+}
+
+/* Medium devices (Small laptops/large tablets, 992px to 1367px) */
+@media (min-width: 992px) and (max-width: 1367px) {
+
+    p {
+        line-height: 1.5;
+    }
+
+    h1 {
+        margin-top: 40px;
+        font-size: 52px;
+    }
+    header > nav > ul {
+        margin-right: 30px;
+    }
+
+    header > nav > ul > li > a {
+        font-size: 14px;
+        padding: 7px 40px 7px 40px;
+    }
+
+    #products-container {
+        padding: 0 0 5px 0;
+    }
+
+} 
+
+/* Small devices (large phones/small tablets, 501px to 991px) */
+@media (min-width: 501px) and (max-width: 991px) {
+
+    
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    
+
+    header > a > img {
+        width: 50px;
+        height: 50px;
+        padding-top: 5px;
+    }
+
+    nav {
+        display: none;
+        width: 99%;
+        position: absolute;
+        margin-top: 53px;
+        margin-left: -120px;
+        z-index: 2;
+    }
+
+    nav > ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header > nav > ul > li > a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .icons {
+        padding: 10px 10px 2.5px 10px;
+    }
+
+    #search-bar {
+        display: none;
+        position: absolute;
+    }
+
+    #header-right {
+        position: absolute;
+        margin-top: 253px;
+        margin-left: -10px;
+        display: none;
+        width: 99%;
+        height: 50px;
+        border: 2px solid #232323;
+        border-top: none;
+        background-color: #131417;
+        z-index: 1;
+        align-content: center;
+    }
+
+    #wishlist {
+        margin-left: 10px;
+    }
+
+
+    nav > ul > li > a {
+        display: block;
+        padding: 10px;
+        width: 100%;
+    }
+
+    #menu-toggle:checked ~ nav,
+    #menu-toggle:checked ~ #header-right {
+        display: block;
+    }
+
+    .icons {
+        padding: 7px;
+    }
+
+    #menu-icon {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 21px;
+        right: 10px;
+    }
+
+    .mobile-icon {
+        width: 30px;
+        height: 30px;
+        padding: 7px 7px 0 7px;
+        border-radius: 4px;
+    }
+
+    .mobile-icon:hover {
+        background-color: #40454D;
+    }
+
+    h1 {
+        margin-top: 50px;
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    #slideshow {
+        margin-top: 100px;
+    }
+
+    #products-container {
+        gap: 30vh;
+        padding: 0 0 80px 0;
+        margin: auto;
+    }
+
+    footer > ul {
+        position: absolute;
+        margin-bottom: 1310px;
+        left: 110px;
+        display: sticky;
+    }
+
+    footer {
+        justify-content: center;
+        gap: 5px;
+    }
+
+    footer > div {
+        margin-left: 5px;
+    }
+
+    #github-icon {
+        margin-left: 5px;
+    }
+}
+
+
