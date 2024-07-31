@@ -162,7 +162,6 @@ footer > div {
     display: flex;
     gap: 0.7em;
     height: 35px;
-    
 }
 
 footer > div > a {
@@ -483,7 +482,7 @@ footer > ul > li > a:focus {
 
 } 
 
-/* Small devices (max-width: 768px) */
+/* Mobile devices (max-width: 768px) */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -609,6 +608,7 @@ footer > ul > li > a:focus {
     footer > ul {
         font-size: 8px;
         margin-left: 30px;
+        gap: 1px;
         
     }
 
@@ -619,9 +619,8 @@ footer > ul > li > a:focus {
     }
 
     footer {
-        justify-content: flex-start;
+        justify-content: space-evenly;
         gap: 0;
-        width: 407px;
         padding: 0 10px 0 10px;
         height: 45px;
     }
@@ -629,7 +628,6 @@ footer > ul > li > a:focus {
     footer > div {
         margin-left: 8px;
         height: 25px;
-        gap: 1em;
     }
 
     footer > div > a > img {
@@ -637,10 +635,6 @@ footer > ul > li > a:focus {
         height: 20px;
     }
 
-    #github-icon {
-        position: absolute;
-        margin-left: 380px;
-    }
 }
 
 
