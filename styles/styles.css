@@ -306,12 +306,12 @@ footer > ul > li > a:focus {
 
 .card .details-content {
     border-top: 1px solid #232323;
-    transition: max-height 0.3s ease; /* Smooth transition for height */
+    transition: max-height 0.3s ease;
     font-size: 12px;
 }
 
 .card details[open] .details-content {
-    max-height: fit-content; /* Set a large fixed value to accommodate the content */
+    max-height: fit-content;
 }
 
 .card button {
@@ -382,8 +382,40 @@ footer > ul > li > a:focus {
 }
 
 /* ------------------------------------------------------  MEDIA QUERIES ------------------------------------------------------ */
-  
-/* Base styles written for standard 13.6" laptop */
+
+/* Extra Large devices (large desktops/monitors, 1665px and up) */
+@media (min-width: 1665px) {
+    h1 {
+        margin-top: 160px;
+        font-size: 84px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    #products-container {
+        gap: 40vh;
+        padding: 0 0 200px 0;
+    }
+
+    .slide:nth-child(1) {
+        margin-left: 2400px;
+    }
+    
+    
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+    
+        100% {
+            transform: translateX(-220%);
+        }
+    }
+}
+
+/* Base styles written on standard 13.6" laptop */
 @media only screen and (min-width: 1280px) {
 
     header {
@@ -419,45 +451,11 @@ footer > ul > li > a:focus {
 
     header > nav > ul > li {
         width: 100px;
-    }
-
-    
+    } 
 } 
 
-/* Extra Large devices (large desktops/monitors, 1665px and up) */
-@media (min-width: 1665px) {
-    h1 {
-        margin-top: 160px;
-        font-size: 84px;
-    }
-
-    p {
-        font-size: 22px;
-    }
-
-    #products-container {
-        gap: 40vh;
-        padding: 0 0 200px 0;
-    }
-
-    .slide:nth-child(1) {
-        margin-left: 2400px;
-    }
-    
-    
-    @keyframes slide {
-        0% {
-            transform: translateX(0);
-        }
-    
-        100% {
-            transform: translateX(-220%);
-        }
-    }
-}
-
-/* Medium devices (Small laptops/large tablets, 992px to 1367px) */
-@media (min-width: 992px) and (max-width: 1367px) {
+/* Medium devices (Small laptops/large tablets, 780px to 1260px) */
+@media (min-width: 780px) and (max-width: 1260px) {
 
     p {
         line-height: 1.5;
@@ -469,6 +467,7 @@ footer > ul > li > a:focus {
     }
     header > nav > ul {
         margin-right: 30px;
+        background-color: #232323;
     }
 
     header > nav > ul > li > a {
@@ -477,7 +476,8 @@ footer > ul > li > a:focus {
     }
 
     #products-container {
-        padding: 0 0 5px 0;
+        padding: 0 0 10px 0;
+        gap: 25vh;
     }
 
 } 
@@ -520,11 +520,6 @@ footer > ul > li > a:focus {
         font-size: 16px;
     }
 
-    #search-bar {
-        display: none;
-        position: absolute;
-    }
-
     #header-right {
         position: absolute;
         margin-top: 260px;
@@ -536,6 +531,7 @@ footer > ul > li > a:focus {
         background-color: #131417;
         z-index: 1;
         align-content: center;
+        border-top: none;
     }
 
     #wishlist {
@@ -552,8 +548,8 @@ footer > ul > li > a:focus {
         width: 30px;
         height: 30px;
         position: absolute;
-        bottom: 262.5px;
-        left: 195px;
+        top: -250px;
+        left: 230px;
         padding: 7px 9px 7px 7px;
     }
 
@@ -636,5 +632,27 @@ footer > ul > li > a:focus {
     }
 
 }
+
+
+/* Fixing search icon position on smaller devices */
+@media (max-width: 499px) {
+
+    .search {
+        top: -250px;
+        left: 195px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
