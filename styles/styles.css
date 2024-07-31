@@ -484,6 +484,7 @@ footer > ul > li > a:focus {
     header > nav > ul > li > a {
         font-size: 14px;
         padding: 7px 40px 7px 40px;
+        color: DFE0E2;
     }
 
     #products-container {
@@ -529,6 +530,7 @@ footer > ul > li > a:focus {
         font-size: 14px;
         padding: 5px;
         font-size: 16px;
+        color: #DFE0E2;
     }
 
     #header-right {
