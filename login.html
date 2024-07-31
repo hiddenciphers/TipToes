@@ -108,14 +108,13 @@
                 />
                 <!-- Login Icon -->
                 <a 
-                    class="icons-active"
                     tabindex="6"
                     title="Login" 
                     aria-label="Login" 
                     href="./login.html"
                 >
                     <img 
-                        class="icons" 
+                        class="icons active" 
                         alt="User Login Icon" 
                         src="./resources/icons/login.png" 
                     />
@@ -152,14 +151,33 @@
     </header>
     <h1>Sign Up / Login</h1>
     <p>Welcome to the comfort zone!</p>
-        <section id="form-container" aria-label="Login / Signup portal">
+        <section
+            id="form-container"
+            aria-label="Login / Signup portal"
+        >
             <form action="/">
                 <label for="email">Email</label>
-                <input type="email" name="email" aria-label="Email input">
+                <input
+                    type="email"
+                    name="email"
+                    aria-label="Email input"
+                    placeholder="batman2@batmail.com"
+                >
                 <label for="password">Password</label>
-                <input type="password" name="password" aria-label="Password input">
-                <br>
-                <button type="submit" aria-label="Submit button">Go</button>
+                <input
+                    type="password"
+                    name="password"
+                    aria-label="Password input"
+                    placeholder="*************"
+                >
+                <span>Password must be atleast 8 characters including 1 digit and 1 symbol</span>
+                
+                <button
+                    type="submit"
+                    aria-label="Submit button"
+                >
+                    Go
+                </button>
             </form>
         </section>
     <!-- Footer -->

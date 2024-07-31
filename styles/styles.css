@@ -266,9 +266,11 @@ footer > ul > li > a:focus {
 
 /*  ------------------------------------------------------ PRODUCTS ------------------------------------------------------ */
 #products-container {
-    padding: 0 0 30px 0;
+    padding: 0 0 5px 0;
     overflow-y: scroll;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    height: 54vh;
     margin: 0 auto;
     gap: 20vh;
 }
@@ -379,6 +381,15 @@ footer > ul > li > a:focus {
     background-color: #fbd405;
     border: 0.1px solid #DFE0E2;
     color: #050505;
+}
+
+#form-container > form > input[value] {
+    color: #848990;
+}
+
+#form-container > form > span {
+    font-size: 9px;
+    color: #848990;
 }
 
 /* ------------------------------------------------------  MEDIA QUERIES ------------------------------------------------------ */
@@ -522,16 +533,21 @@ footer > ul > li > a:focus {
 
     #header-right {
         position: absolute;
-        margin-top: 260px;
+        margin-top: 254px;
         margin-left: -10px;
         display: none;
-        width: 99%;
+        width: 99.1%;
         height: 55px;
         border: 2px solid #232323;
         background-color: #131417;
         z-index: 1;
         align-content: center;
         border-top: none;
+        border: 2px solid #232323;
+    }
+
+    #header-right:hover {
+        background-color: #30363D;
     }
 
     #wishlist {
@@ -556,6 +572,15 @@ footer > ul > li > a:focus {
     .icons {
         padding: 7px;
         border-radius: 4px;
+    }
+
+    .icons:hover {
+        background-color: #131417;
+    }
+
+    .active {
+        background-color: #131417;
+        border: 1px solid #848990;
     }
 
     #menu-toggle:checked ~ nav,
@@ -591,9 +616,7 @@ footer > ul > li > a:focus {
         font-size: 12px;
     }
 
-    #slideshow {
-        margin-top: 100px;
-    }
+    
 
     #products-container {
         gap: 30vh;
@@ -618,17 +641,20 @@ footer > ul > li > a:focus {
         justify-content: space-evenly;
         gap: 0;
         padding: 0 10px 0 10px;
-        height: 45px;
+        
     }
 
     footer > div {
-        margin-left: 8px;
         height: 25px;
     }
 
     footer > div > a > img {
         width: 20px;
         height: 20px;
+    }
+
+    footer > div, #github-icon {
+        margin-top: 20px;
     }
 
 }
