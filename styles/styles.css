@@ -351,6 +351,8 @@ footer > ul > li > a:focus {
     font-size: 22px;
 }
 
+/* -------------------------------------- Login / Sign Up Form -------------------------------------- */
+
 #form-container {
     display: flex;
     justify-content: center;
@@ -382,7 +384,7 @@ footer > ul > li > a:focus {
 }
 
 #form-container > form > button:hover {
-    background-color: #fbd405;
+    background-color: #F4C418;
     border: 0.1px solid #DFE0E2;
     color: #050505;
 }
