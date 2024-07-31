@@ -462,7 +462,8 @@ footer > ul > li > a:focus {
 
     header > nav > ul > li {
         width: 100px;
-    } 
+    }
+
 } 
 
 /* Medium devices (Small laptops/large tablets, 780px to 1260px) */
@@ -484,7 +485,7 @@ footer > ul > li > a:focus {
     header > nav > ul > li > a {
         font-size: 14px;
         padding: 7px 40px 7px 40px;
-        color: DFE0E2;
+        color: #DFE0E2;
     }
 
     #products-container {
@@ -535,7 +536,7 @@ footer > ul > li > a:focus {
 
     #header-right {
         position: absolute;
-        margin-top: 255px;
+        margin-top: 256px;
         margin-left: -10px;
         display: none;
         width: 99.1%;
@@ -544,8 +545,6 @@ footer > ul > li > a:focus {
         background-color: #131417;
         z-index: 1;
         align-content: center;
-        border-top: none;
-        border: 2px solid #232323;
     }
 
     #header-right:hover {
@@ -668,6 +667,11 @@ footer > ul > li > a:focus {
     .search {
         top: -250px;
         left: 195px;
+    }
+
+    #header-right {
+        margin-top: 261.5px;
+        border-top: none;
     }
 }
 
