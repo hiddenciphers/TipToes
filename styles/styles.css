@@ -483,11 +483,7 @@ footer > ul > li > a:focus {
 
 } 
 
-/* Small devices (large phones/small tablets, 501px to 991px) */
-@media (min-width: 501px) and (max-width: 991px) {
-  /* Unused  */
-}
-
+/* Small devices (max-width: 768px) */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
