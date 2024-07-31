@@ -34,7 +34,6 @@ header > nav > ul {
     gap: 0.1em;
     padding: 2px;
     margin-left: 110px;
-    
 }
 
 header > nav > ul > li {
@@ -46,15 +45,15 @@ header > nav > ul > li > a {
     text-decoration: none;
     color: #DFE0E2;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    padding: 7px 60px;
+    font-size: 12px;
+    padding: 7px;
 }
 
 header > nav > ul:hover {
     background-color: #232323;
 }
 
-header > nav > ul li:hover {
+header > nav > ul > li:hover {
     background-color: #40454D;
 }
 
@@ -63,7 +62,7 @@ header > nav > ul > li > a:focus {
 }
 
 .active {
-    background-color: #40454D;
+    background-color: #40454D; 
 }
 
 header > div {
@@ -90,6 +89,10 @@ header > div > div {
     width: 20px;
     padding: 5px;
     border-radius: 8px;
+}
+
+#ul-active {
+    background-color: #232323;
 }
 
 .icons-active {
@@ -418,10 +421,7 @@ footer > ul > li > a:focus {
         width: 100px;
     }
 
-    header > nav > ul > li > a {
-        padding: 5px;
-        font-size: 14px;
-    }
+    
 } 
 
 /* Extra Large devices (large desktops/monitors, 1665px and up) */
