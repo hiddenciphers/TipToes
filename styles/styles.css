@@ -43,7 +43,7 @@ header > nav > ul > li {
 
 header > nav > ul > li > a {
     text-decoration: none;
-    color: #232323;
+    color: #DFE0E2;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     padding: 7px;
@@ -462,6 +462,10 @@ footer > ul > li > a:focus {
 
     header > nav > ul > li {
         width: 100px;
+    }
+
+    header > nav > ul > li > a {
+        color: #232323;
     }
 
 } 
