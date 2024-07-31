@@ -43,7 +43,7 @@ header > nav > ul > li {
 
 header > nav > ul > li > a {
     text-decoration: none;
-    color: #DFE0E2;
+    color: #232323;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     padding: 7px;
@@ -55,6 +55,10 @@ header > nav > ul:hover {
 
 header > nav > ul > li:hover {
     background-color: #40454D;
+}
+
+header > nav > ul > li > a:hover {
+    color: #DFE0E2;
 }
 
 header > nav > ul > li > a:focus {
@@ -446,10 +450,6 @@ footer > ul > li > a:focus {
         width: 120px;
         height: 240px;
         cursor: pointer;
-    }
-
-    header > a:hover + nav {
-        display: block;
     }
     
     header > nav > ul {
