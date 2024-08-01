@@ -274,7 +274,7 @@ footer > ul > li > a:focus {
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
-    height: 54vh;
+    height: 50vh;
     margin: -10px auto;
     gap: 20vh;
 }
@@ -412,8 +412,9 @@ footer > ul > li > a:focus {
     }
 
     #products-container {
-        gap: 40vh;
-        padding: 0 0 200px 0;
+        gap: 30vh;
+        padding: 0 0 137px 0;
+        height: 41vh;
     }
 
     .slide:nth-child(1) {
@@ -677,7 +678,7 @@ footer > ul > li > a:focus {
 
     #header-right {
         margin-top: 261.5px;
-        border-top: none;
+        
     }
 
     #products-container {
