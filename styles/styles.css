@@ -91,6 +91,7 @@ header > section > section {
 
 .icons {
     width: 20px;
+    height: 20px;
     padding: 5px;
     border-radius: 8px;
 }
@@ -187,6 +188,7 @@ footer > section > a:focus {
 
 footer > section > a > img {
     width: 30px;
+    height: 30px;
 }
 
 footer > ul {
@@ -492,6 +494,7 @@ footer > ul > li > a:focus {
         margin-top: 40px;
         font-size: 52px;
     }
+
     header > nav > ul {
         margin-right: 30px;
         background-color: #232323;
@@ -701,7 +704,7 @@ footer > ul > li > a:focus {
 
 /* TODO - Media Query for phones is landscape mode */
 
-
+/* TODO - Media Query for tablet is portrait mode */
 
 
 

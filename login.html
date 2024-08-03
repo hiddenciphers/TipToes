@@ -46,8 +46,12 @@
                 class="icons mobile-icon"
             >
         </label>
+        <!-- Main Menu -->
         <nav>
-            <ul>
+            <ul
+                title="Main Menu"
+                aria-label="Main Menu"
+            >
                 <!-- About -->
                 <li>
                     <a
@@ -153,14 +157,19 @@
     <h1>Sign Up / Login</h1>
     <p>Welcome to the comfort zone!</p>
         <section
-            id="form-container"
+            id="form-container"         
             aria-label="Login / Signup portal"
         >
-            <form action="/">
+            <form 
+                action="/"
+                tabindex="0"
+                aria-label="Login / Signup form"
+                >
                 <label for="email">Email</label>
                 <input
                     type="email"
                     name="email"
+                    tabindex="0"
                     aria-label="Email input"
                     placeholder="example@gmail.com"
                 >
@@ -168,6 +177,7 @@
                 <input
                     type="password"
                     name="password"
+                    tabindex="0"
                     aria-label="Password input"
                     placeholder="*************"
                 >
@@ -175,6 +185,7 @@
                 
                 <button
                     type="submit"
+                    tabindex="0"
                     aria-label="Submit button"
                 >
                     Go
@@ -226,7 +237,10 @@
             </a>
         </section>
         <!-- Policies Links Container -->
-        <ul>
+        <ul
+            title="Footer Menu"
+            aria-label="Footer Menu"
+        >
             <!-- Returns & Exchanges Policies -->
             <li>
                 <a
