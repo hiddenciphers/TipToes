@@ -154,6 +154,11 @@ p {
     line-height: 2;
 }
 
+.product-image {
+    width: fit-content;
+    height: fit-content;
+}
+
 footer {
     height: 80px;
     background-color: #050505;
