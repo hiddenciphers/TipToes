@@ -642,8 +642,6 @@ footer > ul > li > a:focus {
         font-size: 12px;
     }
 
-    
-
     #products-container {
         gap: 30vh;
         padding: 0 0 80px 0;
@@ -681,6 +679,10 @@ footer > ul > li > a:focus {
 
     footer > section, #github-icon {
         margin-top: 20px;
+    }
+
+    .slide:nth-child(1) {
+        margin-left: 1000px;
     }
 
 }
