@@ -520,6 +520,12 @@ footer > ul > li > a:focus {
 
 /* Mobile devices (max-width: 768px) */
 @media (max-width: 768px) {
+
+    #menu-toggle:checked ~ nav,
+    #menu-toggle:checked ~ #header-right {
+        display: block;
+    }
+    
     header {
         flex-direction: column;
         align-items: flex-start;
@@ -605,11 +611,6 @@ footer > ul > li > a:focus {
     .active {
         background-color: #131417;
         border: 1px solid #848990;
-    }
-
-    #menu-toggle:checked ~ nav,
-    #menu-toggle:checked ~ #header-right {
-        display: block;
     }
 
     #menu-icon {
