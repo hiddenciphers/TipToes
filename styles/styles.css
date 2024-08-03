@@ -620,14 +620,14 @@ footer > ul > li > a:focus {
         right: 10px;
     }
 
-    .mobile-icon {
+    #mobile-icon {
         width: 30px;
         height: 30px;
         padding: 7px 7px 0 7px;
         border-radius: 4px;
     }
 
-    .mobile-icon:hover {
+    #mobile-icon:hover {
         background-color: #40454D;
     }
 
