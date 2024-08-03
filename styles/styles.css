@@ -258,7 +258,7 @@ footer > ul > li > a:focus {
 }
 
 .slide:nth-child(1) {
-    margin-left: 2600px;
+    margin-left: 0px;
 }
 
 #slideshow > .slide-wrapper > .slide > .image-container > img {
@@ -681,6 +681,10 @@ footer > ul > li > a:focus {
 
     footer > section, #github-icon {
         margin-top: 20px;
+    }
+
+    .slide:nth-child(1) {
+        margin-left: 0px;
     }
 
 }
