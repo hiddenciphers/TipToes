@@ -476,10 +476,11 @@ footer > ul > li > a:focus {
 
     header > nav > ul > li {
         width: 100px;
+        border-color: transparent;
     }
 
     header > nav > ul > li > a {
-        color: #232323;
+        color: #DFE0E2;
     }
 
     .product-details {
