@@ -728,7 +728,6 @@ footer > ul > li > a:focus {
         margin-top: 20px;
     }
 
-
 }
 
 
@@ -752,6 +751,12 @@ footer > ul > li > a:focus {
         height: 55vh;
         margin: -12px auto;
         padding: 0;
+    }
+
+    .product-image {
+        border-radius: 8px;
+        width: fit-content;
+        height: fit-content;
     }
 
 }
