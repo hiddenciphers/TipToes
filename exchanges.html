@@ -8,13 +8,10 @@
     <!-- Page Title -->
     <title>Returns / Exchanges</title>
     <!-- Tab Icon -->
-    <link rel="icon" href="./resources/branding/logo.png">
-    <!-- Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-    <!-- Custom Google Fonts (DM Dans, Montserrat) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./resources/branding/resized_logo.avif">
+    <!-- Ensure stylesheet loads for users with JavaScript disabled -->
+    <link rel="preload" href="./styles/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./styles/styles.css"></noscript>
 </head>
 <body>
     <!-- Header -->
