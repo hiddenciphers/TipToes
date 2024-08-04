@@ -1,7 +1,7 @@
 /* Custom DM Sans font */
 @font-face {
     font-family: 'DM Sans';
-    src: url('/resources/fonts/DMSans.ttf') format('truetype');
+    src: url('../resources/fonts/DMSans.ttf') format('truetype');
     font-optical-sizing: auto;
     font-weight: 100 1000;
     font-style: normal;
@@ -11,7 +11,7 @@
 /* Custom Montserrat font */
 @font-face {
     font-family: 'Montserrat';
-    src: url('/resources/fonts/Montserrat.ttf') format('truetype');
+    src: url('../resources/fonts/Montserrat.ttf') format('truetype');
     font-optical-sizing: auto;
     font-weight: 100 900;
     font-style: normal;
