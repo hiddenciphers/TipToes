@@ -753,12 +753,6 @@ footer > ul > li > a:focus {
         padding: 0;
     }
 
-    .product-image {
-        border-radius: 8px;
-        width: fit-content;
-        height: fit-content;
-    }
-
 }
 
 /* TODO - Media Query for phones is landscape mode */
