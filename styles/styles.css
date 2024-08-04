@@ -264,14 +264,14 @@ footer > ul > li > a:focus {
     position: absolute;
     width: fit-content;
     height: fit-content;
-    opacity: 0;
-    animation: fade 32s infinite;
     display: flex;
     justify-content: center;
     align-items: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: fade 32s infinite;
 }
 
 
@@ -324,7 +324,7 @@ footer > ul > li > a:focus {
     0%, 15%, 100% {
         opacity: 0;
     }
-    5%, 10% {
+    10% {
         opacity: 1;
     }
 }
