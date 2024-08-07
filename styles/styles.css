@@ -18,6 +18,20 @@
     font-display: swap;
 }
 
+/* Custom Montserrat font - Bold */
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('../resources/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-optical-sizing: auto;
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+strong {
+    font-family: 'Montserrat Bold', sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -331,17 +345,28 @@ footer > ul > li > a:focus {
 
 /*  ------------------------------------------------------ PRODUCTS ------------------------------------------------------ */
 #products-container {
-    padding: 0 10px 5px 10px;
+    padding: 0 10px 100px 10px;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    height: 76.5vh;
     margin: -10px auto;
-    gap: 20vh;
+    gap: 20em;
+}
+
+#products-h1 {
+    margin-top: 70px;
+}
+
+#products-p {
+    margin-top: -310px;
+}
+
+#gary-black {
+    margin-top: -300px;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     text-align: center;
     background-color: #050505;
@@ -350,6 +375,7 @@ footer > ul > li > a:focus {
     flex-direction: column;
     justify-content: space-between;
     border-radius: 8px;
+    margin-top: -50px;
 }
 
 .top-rounded {
@@ -563,8 +589,22 @@ footer > ul > li > a:focus {
         display: none;
     }
 
+    #products-h1 {
+        margin-top: 40px;
+    }
+
+    #products-p {
+        margin-top: -170px;
+    }
+
+    #gary-black {
+        margin-top: -160px;
+    }
+
     #products-container {
-        padding: 0 0 10px 0;
+        margin-top: 0;
+        height: 65.6vh;
+        padding: 0 10px 50px 10px;
         gap: 25vh;
     }
 
@@ -697,9 +737,12 @@ footer > ul > li > a:focus {
         font-size: 12px;
     }
 
+    #products-h1 {
+        margin-top: 50px;
+    }
+
     #products-container {
-        gap: 30vh;
-        padding: 0 0 80px 0;
+        padding: 0 10px 130px 10px;
         margin: auto;
     }
 
@@ -741,7 +784,7 @@ footer > ul > li > a:focus {
 
 /* Fixing search icon position on smaller devices */
 @media (max-width: 499px) {
-
+    
     p {
         margin-bottom: 20px;
     }
@@ -755,10 +798,18 @@ footer > ul > li > a:focus {
         margin-top: 261.3px;
     }
 
+    #products-h1 {
+        margin-top: 40px;
+    }
+
+    #products-p {
+        margin-top: -315px;
+    }
+
     #products-container {
-        height: 55vh;
-        margin: -12px auto;
-        padding: 0;
+        height: 64vh;
+        margin: auto;
+        padding: 10px 10px 100px 10px;
     }
 
     .hidden-menu-item {
