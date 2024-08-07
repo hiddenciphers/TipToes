@@ -9,9 +9,8 @@
     <title>Returns / Exchanges</title>
     <!-- Tab Icon -->
     <link rel="icon" href="./resources/branding/logo.avif">
-    <!-- Ensure stylesheet loads for users with JavaScript disabled -->
-    <link rel="preload" href="./styles/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="./styles/styles.css"></noscript>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
 </head>
 <body>
     <!-- Header -->
@@ -95,6 +94,45 @@
                         title="Contact"
                     >
                         Contact
+                    </a>
+                </li>
+                <!-- Login -->
+                <li 
+                    class="hidden-menu-item"
+                >
+                    <a 
+                        href="./login.html" 
+                        aria-label="Login" 
+                        tabindex="0" 
+                        title="Login"
+                    >
+                        Login
+                    </a>
+                </li>
+                <!-- Wishlist -->
+                <li
+                    class="hidden-menu-item"
+                >
+                    <a 
+                        href="./wishlist.html" 
+                        aria-label="Wishlist" 
+                        tabindex="0" 
+                        title="Wishlist"
+                    >
+                        Wishlist
+                    </a>
+                </li>
+                <!-- Cart -->
+                <li
+                    class="hidden-menu-item"
+                >
+                    <a 
+                        href="./cart.html" 
+                        aria-label="Cart" 
+                        tabindex="0" 
+                        title="Cart"
+                    >
+                        Cart
                     </a>
                 </li>
             </ul>

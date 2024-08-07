@@ -559,6 +559,10 @@ footer > ul > li > a:focus {
         color: #DFE0E2;
     }
 
+    .hidden-menu-item {
+        display: none;
+    }
+
     #products-container {
         padding: 0 0 10px 0;
         gap: 25vh;
@@ -609,6 +613,10 @@ footer > ul > li > a:focus {
         padding: 5px;
         font-size: 16px;
         color: #DFE0E2;
+    }
+
+    .hidden-menu-item {
+        display: none;
     }
 
     #header-right {
@@ -751,6 +759,10 @@ footer > ul > li > a:focus {
         height: 55vh;
         margin: -12px auto;
         padding: 0;
+    }
+
+    .hidden-menu-item {
+        display: none;
     }
 
 }
