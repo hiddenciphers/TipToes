@@ -251,7 +251,7 @@ footer > ul > li:hover {
 footer > ul > li > a:focus {
     background-color: #40454D;
 }
-/* ------------------------------------------------------ SLIDESHOW ------------------------------------------------------ */
+/* -------------- SLIDESHOW --------------- */
 #slideshow {
     overflow: hidden;
     height: 400px;
@@ -343,7 +343,7 @@ footer > ul > li > a:focus {
     }
 }
 
-/*  ------------------------------------------------------ PRODUCTS ------------------------------------------------------ */
+/*  ----------------- PRODUCTS --------------------- */
 #products-container {
     padding: 0 10px 100px 10px;
     overflow-y: scroll;
@@ -445,7 +445,7 @@ footer > ul > li > a:focus {
     font-size: 22px;
 }
 
-/* -------------------------------------- LOGIN / SIGN UP FORM -------------------------------------- */
+/* -------------- LOGIN / SIGN UP FORM ---------------- */
 
 #form-container {
     display: flex;
@@ -492,7 +492,7 @@ footer > ul > li > a:focus {
     color: #848990;
 }
 
-/* ------------------------------------------------------  MEDIA QUERIES ------------------------------------------------------ */
+/* ---------------  MEDIA QUERIES ----------------- */
 
 /* Extra Large devices (large desktops/monitors, 1665px and up) */
 @media (min-width: 1665px) {
@@ -501,14 +501,26 @@ footer > ul > li > a:focus {
         font-size: 84px;
     }
 
+    #products-h1 {
+        margin-top: 167px;
+    }
+
     p {
         font-size: 22px;
     }
 
+    #products-p {
+        margin-top: -665px;
+    }
+
     #products-container {
-        gap: 30vh;
-        padding: 0 10px 137px 10px;
-        height: 41vh;
+        gap: 60vh;
+        padding: 0 10px 250px 10px;
+        height: 71vh;
+    }
+
+    #gary-black {
+        margin-top: -650px;
     }
 
     .product-details {
@@ -562,7 +574,7 @@ footer > ul > li > a:focus {
 
 } 
 
-/* Medium devices (Small laptops/large tablets, 780px to 1260px) */
+/* Medium devices (Small laptops/large tablets, landscape mode) */
 @media (min-width: 780px) and (max-width: 1260px) {
 
     p {
@@ -608,9 +620,48 @@ footer > ul > li > a:focus {
         gap: 25vh;
     }
 
-} 
+}
 
-/* Mobile devices (max-width: 768px) */
+/* Tablets in portrait mode */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    h1 {
+        margin-top: 100px;
+    }
+
+    header > nav > ul {
+        width: fit-content;
+    }
+
+    header > nav > ul > li {
+        width: 80px;
+    }
+
+    header > nav > ul > li > a {
+        font-size: 12px;
+        padding: 7px 20px 7px 20px;
+    }
+
+    #products-h1 {
+        margin-top: 92px;
+    }
+
+    #products-p {
+        margin-top: -330px;
+    }
+
+    #gary-black {
+        margin-top: -250px;
+    }
+
+    #products-container {
+        height: 58vh;
+        gap: 31vh;
+        margin: auto;
+        padding: 10px 20px 250px 20px;
+    }
+  }
+  
+/* Large mobile devices */
 @media (max-width: 768px) {
 
     #menu-toggle:checked ~ nav,
@@ -781,8 +832,7 @@ footer > ul > li > a:focus {
 
 }
 
-
-/* Fixing search icon position on smaller devices */
+/* Smaller mobile devices */
 @media (max-width: 499px) {
     
     p {
@@ -818,9 +868,38 @@ footer > ul > li > a:focus {
 
 }
 
-/* TODO - Media Query for phones is landscape mode */
+/* Mobile devices in landscape mode */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
+    
+    body {
+        height: 200vh;
+    }
+    
+    header > nav > ul > li {
+        width: 80px;
+    }
 
-/* TODO - Media Query for tablet is portrait mode */
+    header > nav > ul > li > a {
+        font-size: 12px;
+        padding: 7px 20px 7px 20px;
+    }
+
+    #products-h1 {
+        margin-top: 40px;
+    }
+
+    #products-p {
+        margin-top: -150px;
+    }
+
+    #products-container {
+        height: 140vh;
+        gap: 40vh;
+    }
+    
+  }
+  
+
 
 
 
