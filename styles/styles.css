@@ -510,17 +510,17 @@ footer > ul > li > a:focus {
     }
 
     #products-p {
-        margin-top: -665px;
+        margin-top: -320px;
     }
 
     #products-container {
-        gap: 60vh;
+        gap: 80vh;
         padding: 0 10px 250px 10px;
-        height: 71vh;
+        align-items: center;
     }
 
     #gary-black {
-        margin-top: -650px;
+        margin-top: -300px;
     }
 
     .product-details {
@@ -570,6 +570,16 @@ footer > ul > li > a:focus {
 
     .product-details {
         font-size: 16px;
+    }
+
+    #products-container {
+        padding: 0 10px 100px 10px;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        height: 64.3vh;
+        margin: -10px auto;
+        gap: 20em;
     }
 
 } 
